@@ -21,7 +21,7 @@ int main(void)
     printf("]\n");
 
     for (size_t i = 0; i < SIZE; ++i) {
-        for (size_t j = i; j < SIZE; ++j) {
+        for (size_t j = i + 1; j < SIZE; ++j) {
             if (vec[i] > vec[j]) {
                 int tmp = vec[i];
                 vec[i] = vec[j];
