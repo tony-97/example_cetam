@@ -30,5 +30,12 @@ int main(void)
         }
     }
 
+    printf("===Random Vector Sorted===\n");
+    printf("[");
+    for (size_t i = 0; i < SIZE; ++i) {
+        printf("%d%s", vec[i], i == SIZE - 1 ? "" : ", ");
+    }
+    printf("]\n");
+
     return 0;
 }
